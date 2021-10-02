@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8" />
+        <meta name="description" content="Meeting Minutes" />
+        <meta name="keywords" content="Meeting,Minutes" />
+        <meta name="author" content="Kangming Yu" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Meeting Minutes</title>
+        <link href="images/ucsdICO.ico" rel="icon" />   
+    </head>
+
+    <body>
+        <header>
+            <section id="website-title">
+                <h1>Meeting Minutes： Front-end Design</h1>
+            </section>
+        </header>
+
+        <nav>
+            <section id="website-nav">
+                <ul id="nav-list">
+                    <li class="nav-item">
+                        <a href="#meeting-agenda">Agenda</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#unfinished-things">Unfinished Business</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#new-things">New Business</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#pictures">Pictures</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#recording">Recording</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#comment-questions">Any Comments or Questions</a>
+                    </li>
+                </ul>
+            </section>
+        </nav>
+
+        <main>
+            <section id="meeting-agenda">
+                <h2>Meeting Agenda</h2>
+                <ol id="agenda-list">
+                    <li>Discuss <em>topics left undone</em> at the last meeting.</li>
+                    <li><strong>Brainstorming</strong> the <b>front-end design</b>.</li>
+                    <li>Draw a <i>rough design</i>.</li>
+                    <li>Any Questions.</li>
+                </ol>
+            </section>
+            <section id="unfinished-things">
+                <h2>Unfinished Business from Last Meeting</h2>
+                <ol id="unfinished-list">
+                    <li>
+                        <p>Identify the target audience for our application.</p>
+                        <p>
+                            -- Target audience is children. <br />
+                            -- Maybe teachers.
+                        </p>
+                    </li>            
+                </ol>
+            </section>	
+            <section id="new-things">
+                <h2>New Business that Need to be Talked About</h2>
+                <ol id="new-list">
+                    <li>
+                        <p>Brainstorming front-end design.</p>
+                        <p>-- There are five parts...</p>
+                    </li>            
+                </ol>
+            </section>	
+            <section id="pictures">
+                <h2>Pictures of Any Diagrams or Architecture</h2>
+                <ol id="picture-list">
+                    <li>
+                        <p>Rough Design</p>
+                        <img src="images/diagram.png" width="300" alt="diagram" />
+                    </li>            
+                </ol>
+            </section>	
+            <section id="recording">
+                <h2>Meeting Recording</h2>
+                <section id="audio-recording">
+                    <div class="diff-type">Audio Recording</div>
+                    <audio controls>
+                        <source src="audios/Barcelona.mp3" type="audio/mpeg" />
+                        <div class="error">Your browser does not support the audio element.</div>
+                    </audio>
+                </section>
+                <section id="video-recording">
+                    <div class="diff-type">Video Recording</div>
+                    <video controls height="393" width="700">
+                        <source src="videos/ucsdVideo.mp4" type="video/mp4" />
+                        <div class="error">Your browser may not support the video element.</div>
+                    </video>
+                </section>
+            </section>
+            <section id="comment-questions">
+                <h2>Any Comments or Questions</h2>
+                <form id="comment-questions-form">
+                    <fieldset>
+                        <ul id="comment-questions-list">
+                            <li id="name-que">
+                                <span class="form-describe">Your name: </span>
+                                <input type="text" name="name" placeholder="Your name" />
+                            </li>
+                            <li id="eval-que">
+                                <span class="form-describe">Evaluation of the outcome of the meeting: </span>
+                                <input list="eval" name="evaluation"/>
+                                <datalist id="eval">
+                                    <option value="The goal of the meeting have been achieved">
+                                    <option value="Good.">
+                                    <option value="Part of the meeting was left unfinished.">
+                                </datalist>
+                            </li>
+                            <li id="type-que">
+                                <span class="form-describe">What do you want to bring up? </span>
+                                <input type="checkbox" id="comments-choice" name="comments-choice" value="Comments" />
+                                <label for="comments-choice">Comments</label>
+                                <input type="checkbox" id="ques-choice" name="ques-choice" value="Questions" />
+                                <label for="ques-choice">Questions</label>
+                            </li>
+                            <li id="comment-que">
+                                <div class="form-describe">Your Comments or Questions: </div>
+                                <textarea rows="28" cols="70" name="comments"></textarea>
+                            </li>
+                            <li id="decided-que">
+                                <span class="form-describe">Is there anything that needs to be discussed and decided? </span>
+                                <input type="radio" id="decided-yes" name="decided-yes" value="yes" />
+                                <label class="form-describe" for="decided-yes">Yes</label>
+                                <input type="radio" id="decided-no" name="decided-no" value="no" />
+                                <label class="form-describe" for="decided-no">No</label>
+                            </li>
+                            <li id="time-que">
+                                <span class="form-describe">The latest time the question needs to be decided</span>
+                                <input type="date" id="latest-time" name="latest-time" />
+                            </li>
+                            <li id="individual-que">
+                                <span class="form-describe">Do you have group members you wish to communicate with individually? </span>
+                                <select name="individual">
+                                    <option value="None">None</option>
+                                    <option value="Kangming Yu">Kangming Yu</option>
+                                    <option value="Kelvin Yu">Kelvin Yu</option>
+                                    <option value="Kang Yu">Kang Yu</option>
+                                </select>
+                            </li>
+                            <li><button type="submit">Submit</button></li>
+                        </ul>			
+                    </fieldset>
+                </form>
+            </section>	
+        </main>
+
+
+        <aside>
+            <section id="meeting-date">
+                <h3>Meeting Date</h3>
+                <p>10-2-2021</p>
+            </section>
+                
+            <section id="attendance">
+                <h3>Attendance List</h3>
+                <ol id="attendance-list">
+                    <li>Kangming Yu</li>
+                    <li>Kelvin Yu</li>
+                    <li>Kang Yu</li>
+                </ol>
+            </section>
+
+            <section id="project-documentation">
+                <h3>Project Documentation</h3>
+            </section>
+        </aside>
+
+        <footer>
+            <hr/>
+            <details>
+                <summary>This page was made by Kangming Yu</summary>
+                <p>The website is made with care.</p>
+            </details>
+        </footer>
+
+
+    </body>
+
+
+</html>
