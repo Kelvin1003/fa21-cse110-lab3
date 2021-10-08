@@ -1,4 +1,4 @@
-# Lab 2
+# Lab 3
 ## Name: Kangming Yu
 ## PID: A16528320
 
