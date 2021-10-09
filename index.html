@@ -9,6 +9,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Meeting Minutes</title>
         <link href="images/ucsdICO.ico" rel="icon" />   
+        <link rel="stylesheet" media="screen and (min-width:1081px)" href="styles/main.css" type="text/css">
     </head>
 
     <body>
@@ -44,7 +45,7 @@
         </nav>
 
         <main>
-            <section id="meeting-agenda">
+            <section class="main-item" id="meeting-agenda">
                 <h2>Meeting Agenda</h2>
                 <ol id="agenda-list">
                     <li>Discuss <em>topics left undone</em> at the last meeting.</li>
@@ -53,7 +54,7 @@
                     <li>Any Questions.</li>
                 </ol>
             </section>
-            <section id="unfinished-things">
+            <section class="main-item" id="unfinished-things">
                 <h2>Unfinished Business from Last Meeting</h2>
                 <ol id="unfinished-list">
                     <li>
@@ -65,7 +66,7 @@
                     </li>            
                 </ol>
             </section>	
-            <section id="new-things">
+            <section class="main-item" id="new-things">
                 <h2>New Business that Need to be Talked About</h2>
                 <ol id="new-list">
                     <li>
@@ -74,7 +75,7 @@
                     </li>            
                 </ol>
             </section>	
-            <section id="pictures">
+            <section class="main-item" id="pictures">
                 <h2>Pictures of Any Diagrams or Architecture</h2>
                 <ol id="picture-list">
                     <li>
@@ -83,7 +84,7 @@
                     </li>            
                 </ol>
             </section>	
-            <section id="recording">
+            <section class="main-item" id="recording">
                 <h2>Meeting Recording</h2>
                 <section id="audio-recording">
                     <div class="diff-type">Audio Recording</div>
@@ -100,7 +101,7 @@
                     </video>
                 </section>
             </section>
-            <section id="comment-questions">
+            <section class="main-item" id="comment-questions">
                 <h2>Any Comments or Questions</h2>
                 <form id="comment-questions-form">
                     <fieldset>
@@ -158,12 +159,12 @@
 
 
         <aside>
-            <section id="meeting-date">
+            <section class="aside-content" id="meeting-date">
                 <h3>Meeting Date</h3>
                 <p>10-2-2021</p>
             </section>
                 
-            <section id="attendance">
+            <section class="aside-content" id="attendance">
                 <h3>Attendance List</h3>
                 <ol id="attendance-list">
                     <li>Kangming Yu</li>
@@ -172,7 +173,7 @@
                 </ol>
             </section>
 
-            <section id="project-documentation">
+            <section class="aside-content" id="project-documentation">
                 <h3>Project Documentation</h3>
             </section>
         </aside>

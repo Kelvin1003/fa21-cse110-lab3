@@ -1,0 +1,49 @@
+/* main.css */
+
+
+body {
+    background-color: var(#eee);
+}
+
+/* header */
+header{
+    background-color: #2c3e50;
+}
+
+header #website-title{
+    color: white;
+}
+
+
+nav a{
+    background-color: #c0392b;
+    color: rgb(255,255,255);
+}
+
+
+/* main  */
+main{
+    background-color: #eee;
+}
+
+main .main-item{
+    border-radius: 5px;
+    background-color: hsl(0,0,100);
+}
+
+main h2{
+    margin-bottom: 5px;
+    padding-bottom: 5px;
+    border-bottom: 1px solid #c0392b;
+}
+
+aside .aside-content{
+    background-color: white;
+}
+
+
+/* foot */
+footer{
+    background-color: #2c3e50;
+    color:white;
+}
