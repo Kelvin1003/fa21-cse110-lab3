@@ -1,5 +1,9 @@
 /* main.css */
 
+@font-face {
+    font-family: "Poppins";
+    src: url("../fonts/Poppins/Poppins-Regular.ttf");
+}
 
 body {
     background-color: var(#eee);
@@ -12,12 +16,17 @@ header{
 
 header #website-title{
     color: white;
+    font-size: 2rem;
+    font-family: "Poppins", serif;
 }
 
 
 nav a{
     background-color: #c0392b;
     color: rgb(255,255,255);
+    text-align: center;
+    text-decoration: none;
+    font-size: 0.5lh;
 }
 
 
@@ -27,14 +36,14 @@ main{
 }
 
 main .main-item{
-    border-radius: 5px;
+    border-radius: 4pt;
     background-color: hsl(0,0,100);
 }
 
 main h2{
-    margin-bottom: 5px;
+    margin-bottom: 0.3em;
     padding-bottom: 5px;
-    border-bottom: 1px solid #c0392b;
+    border-bottom: 1Q solid #c0392b;
 }
 
 aside .aside-content{
